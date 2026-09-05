@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Morrow & Mint is a neighborhood café for slow mornings and bright afternoons." />
+    <title>Morrow & Mint — Neighbourhood Café</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Morrow and Mint home">
+        <span class="brand-mark">M<span>&amp;</span>M</span>
+        <span class="brand-copy">Morrow<br />&amp; Mint</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#menu">Menu</a>
+        <a href="#story">Our story</a>
+        <a href="#visit">Visit us</a>
+      </nav>
+      <div class="header-actions">
+        <button class="text-button" id="open-reservation">Reserve a table</button>
+        <button class="cart-button" id="open-cart" aria-label="Open your order">
+          <span>Order</span><b id="cart-count">0</b>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-photo"></div>
+        <div class="hero-sun"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Est. 2014 · Bengaluru</p>
+          <h1 id="hero-title">Good days<br />start <em>slowly.</em></h1>
+          <p class="hero-intro">Small-batch coffee, generous plates, and a little room to breathe.</p>
+          <div class="hero-buttons">
+            <a class="button button-dark" href="#menu">Explore the menu <span>↓</span></a>
+            <button class="play-link" id="open-story"><i>▶</i> Our morning ritual</button>
+          </div>
+        </div>
+        <div class="hero-note">
+          <span>Today at Morrow</span>
+          <strong>Sunlit tables.<br />Warm cardamom buns.</strong>
+        </div>
+        <div class="scroll-cue">Scroll to linger <span>↓</span></div>
+      </section>
+
+      <section class="ticker" aria-label="Cafe highlights">
+        <div class="ticker-track"><span>All-day breakfast</span><i>✳</i><span>Beans roasted weekly</span><i>✳</i><span>Open from 7:30</span><i>✳</i><span>Oat milk always on us</span><i>✳</i><span>All-day breakfast</span><i>✳</i><span>Beans roasted weekly</span><i>✳</i></div>
+      </section>
+
+      <section class="menu-section" id="menu" aria-labelledby="menu-title">
+        <div class="section-lead">
+          <div>
+            <p class="eyebrow">The daily edit</p>
+            <h2 id="menu-title">Made for the<br /><em>in-between.</em></h2>
+          </div>
+          <p>Thoughtful food and drinks, made from the good stuff. Take your time choosing—we'll be here.</p>
+        </div>
+        <div class="menu-controls">
+          <div class="filters" role="tablist" aria-label="Menu category">
+            <button class="filter active" data-filter="all" role="tab" aria-selected="true">Everything</button>
+            <button class="filter" data-filter="coffee" role="tab" aria-selected="false">Coffee</button>
+            <button class="filter" data-filter="plates" role="tab" aria-selected="false">Plates</button>
+            <button class="filter" data-filter="sweet" role="tab" aria-selected="false">Sweet</button>
+          </div>
+          <span class="menu-note">Tap <b>+</b> to add to your order</span>
+        </div>
+        <div class="menu-grid" id="menu-grid"></div>
+      </section>
+
+      <section class="ritual" id="story" aria-labelledby="ritual-title">
+        <div class="ritual-copy">
+          <p class="eyebrow">The way we do things</p>
+          <h2 id="ritual-title">Less rush.<br />More <em>ritual.</em></h2>
+          <p>We believe a café should feel like the pause between two good thoughts. Our coffee is sourced with care, our kitchen follows the seasons, and everyone gets the window seat eventually.</p>
+          <a class="arrow-link" href="#visit">Find your way here <span>↗</span></a>
+        </div>
+        <div class="ritual-image image-card">
+          <div class="round-stamp">GOOD THINGS · GOOD PEOPLE · GOOD THINGS · GOOD PEOPLE ·</div>
+          <span class="image-caption">Our bar, 8:14 AM</span>
+        </div>
+        <div class="ritual-fact">
+          <span class="fact-number">10</span>
+          <p>years of making<br />neighbours feel at home</p>
+        </div>
+      </section>
+
+      <section class="quote-section">
+        <p class="eyebrow">A note from the neighbourhood</p>
+        <blockquote>“The kind of place where <em>one coffee</em> turns into a very good afternoon.”</blockquote>
+        <p class="quote-credit">— Tara M., regular since 2017</p>
+      </section>
+
+      <section class="visit-section" id="visit" aria-labelledby="visit-title">
+        <div class="visit-photo image-card"><span class="image-caption">Come by soon</span></div>
+        <div class="visit-card">
+          <p class="eyebrow">Come say hello</p>
+          <h2 id="visit-title">Your table<br />is <em>waiting.</em></h2>
+          <div class="visit-details">
+            <div><span>Find us</span><p>18 Primrose Road<br />Indiranagar, Bengaluru</p></div>
+            <div><span>Opening hours</span><p>Mon—Fri · 7:30—21:00<br />Sat—Sun · 8:00—22:00</p></div>
+          </div>
+          <div class="visit-actions">
+            <button class="button button-cream" id="open-reservation-2">Reserve a table <span>→</span></button>
+            <a href="https://maps.google.com/?q=Indiranagar+Bengaluru" target="_blank" rel="noopener" class="arrow-link light">Get directions <span>↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-top">
+        <a class="brand brand-footer" href="#top"><span class="brand-mark">M<span>&amp;</span>M</span><span class="brand-copy">Morrow<br />&amp; Mint</span></a>
+        <p>For slow mornings<br />and bright afternoons.</p>
+        <div class="footer-links"><a href="#menu">Menu</a><a href="#story">Our story</a><a href="#visit">Visit</a><a href="mailto:hello@morrowandmint.cafe">Email us</a></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 Morrow &amp; Mint</span><span>Made with plenty of butter</span><span>Instagram · @morrowandmint</span></div>
+    </footer>
+
+    <button class="chat-fab" id="chat-fab" aria-label="Chat with Morrow & Mint">
+      <span class="chat-dot"></span><span class="chat-fab-copy">Ask Morrow</span><span>✦</span>
+    </button>
+
+    <aside class="chat-panel" id="chat-panel" aria-label="Cafe assistant" aria-hidden="true">
+      <div class="panel-head mint-head">
+        <div><span class="online-dot"></span><small>MORROW'S HELPER</small><h3>How can we help?</h3></div>
+        <button class="close-panel" data-close="chat-panel" aria-label="Close chat">×</button>
+      </div>
+      <div class="chat-messages" id="chat-messages" aria-live="polite">
+        <div class="message bot">Hi! I’m the Morrow &amp; Mint helper. Ask about today's menu, bookings, or our café. ✦</div>
+      </div>
+      <div class="quick-asks"><button data-ask="What are your opening hours?">Opening hours</button><button data-ask="What's good today?">What's good today?</button></div>
+      <form class="chat-input" id="chat-form"><input id="chat-input" type="text" placeholder="Ask us anything…" autocomplete="off" maxlength="500" aria-label="Your message" /><button type="submit" aria-label="Send message">↑</button></form>
+    </aside>
+
+    <aside class="cart-panel" id="cart-panel" aria-label="Your order" aria-hidden="true">
+      <div class="panel-head"><div><small>YOUR LITTLE TREAT</small><h3>Your order</h3></div><button class="close-panel" data-close="cart-panel" aria-label="Close order">×</button></div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-footer"><div class="total-row"><span>Total</span><strong id="cart-total">₹0</strong></div><button class="button button-dark checkout" id="checkout">Place order <span>→</span></button><p>We'll confirm your pickup time at the counter.</p></div>
+    </aside>
+
+    <div class="modal-backdrop" id="reservation-modal" aria-hidden="true">
+      <section class="reservation-modal" role="dialog" aria-modal="true" aria-labelledby="reservation-title">
+        <button class="close-panel modal-close" data-close="reservation-modal" aria-label="Close reservation form">×</button>
+        <p class="eyebrow">Save a sunny spot</p><h2 id="reservation-title">Make a<br /><em>reservation.</em></h2>
+        <form id="reservation-form">
+          <label>Your name<input required name="name" type="text" placeholder="Name" /></label>
+          <div class="form-row"><label>Date<input required name="date" type="date" /></label><label>Guests<select name="guests"><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5+ guests</option></select></label></div>
+          <label>Email<input required name="email" type="email" placeholder="you@example.com" /></label>
+          <button class="button button-dark" type="submit">Request a table <span>→</span></button>
+        </form>
+      </section>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <div class="toast" id="toast" role="status"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

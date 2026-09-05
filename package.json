@@ -1,0 +1,12 @@
+{
+  "name": "morrow-and-mint-cafe",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cafe landing page with n8n-powered chat assistant",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
