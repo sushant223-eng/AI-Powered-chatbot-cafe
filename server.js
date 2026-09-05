@@ -5,7 +5,7 @@ const path = require('path');
 
 const port = process.env.PORT || 3000;
 
-const n8nWebhook = 'https://sushantgoswami756.app.n8n.cloud/webhook-test/ec9fc190-8350-47c9-b06a-987740da7b34';
+const n8nWebhook = process.env.N8N_WEBHOOK_URL;
 
 const root = __dirname;
 
