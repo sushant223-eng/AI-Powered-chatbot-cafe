@@ -1,7 +1,3 @@
-/**
- * Tiny zero-dependency server for the cafe site.
- * Serves the frontend and forwards chat requests to n8n.
- */
 
 const http = require('http');
 const fs = require('fs');
@@ -9,7 +5,6 @@ const path = require('path');
 
 const port = process.env.PORT || 3000;
 
-// अपना n8n webhook URL यहां डालो
 const n8nWebhook = 'https://sushantgoswami756.app.n8n.cloud/webhook-test/ec9fc190-8350-47c9-b06a-987740da7b34';
 
 const root = __dirname;
