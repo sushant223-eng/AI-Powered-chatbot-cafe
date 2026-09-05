@@ -95,4 +95,10 @@ $('#reservation-form').addEventListener('submit', (event) => { event.preventDefa
 $('#chat-form').addEventListener('submit', (event) => { event.preventDefault(); const input = $('#chat-input'); const message = input.value.trim(); if (!message) return; input.value = ''; addMessage(message, 'user'); sendChat(message); });
 $('#reservation-modal').addEventListener('click', event => { if (event.target === $('#reservation-modal')) closeReservation(); });
 document.addEventListener('keydown', event => { if (event.key === 'Escape') { closePanel('chat-panel'); closePanel('cart-panel'); closeReservation(); } });
+// Unique session ID
+let sessionId = localStorage.getItem('chatSessionId');
 
+if (!sessionId) {
+  sessionId = crypto.randomUUID();
+  localStorage.setItem('chatSessionId', sessionId);
+}
